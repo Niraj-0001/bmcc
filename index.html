@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bright Minds Coaching Center</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/mobile_style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="loader"></div>
+    </div>
+
+    <!---- Floating Contact Button --> 
+    <div class="floating-contact">
+        <a href="#contact" class="contact-btn" data-page="contact">
+            <i class="fas fa-comment-dots"></i>
+            <span>Contact Us</span>
+        </a>
+    </div>
+
+    <!-- Mobile Nav Bar -->
+    <nav class="mobile-nav">
+        <div class="mobile-nav-container">
+            <a href="#home" class="mobile-logo" data-page="home">
+                <img src="images/Favicon.png" alt="BMCC Logo">
+                <span>Bright Minds</span>
+            </a>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Sidebar -->
+    <aside class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <img src="images/Logo_Rectangle_02.png" alt="BMCC Logo" class="logo">
+        </div>
+        <nav class="sidebar-nav">
+            <ul>
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active" data-page="home">
+                        <i class="fas fa-home"></i>
+                        <span>Home</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link" data-page="about">
+                        <i class="fas fa-user-tie"></i>
+                        <span>About</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#courses" class="nav-link" data-page="courses">
+                        <i class="fas fa-book-open"></i>
+                        <span>Courses</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#gallery" class="nav-link" data-page="gallery">
+                        <i class="fas fa-images"></i>
+                        <span>Gallery</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#testimonials" class="nav-link" data-page="testimonials">
+                        <i class="fas fa-star"></i>
+                        <span>Testimonials</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link" data-page="contact">
+                        <i class="fas fa-envelope"></i>
+                        <span>Contact</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+        <div class="sidebar-footer">
+            <div class="social-links">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-twitter"></i></a>
+                <a href="#"><i class="fab fa-youtube"></i></a>
+            </div>
+            <p>© 2023 Bright Minds</p>
+        </div>
+    </aside>
+
+    <!-- Main Content ----*-->
+    <main class="main-content">
+        <!-- Home Page -->
+        <section class="page active" id="home-page"> 
+            <div class="hero">
+                <div class="hero-content">
+                    <h1 class="hero-title">Shaping <span>Young Minds</span> for a Brighter Tomorrow</h1>
+                    <p class="hero-text">Quality education for Classes 1-10 with personalized attention and innovative teaching methods.</p>
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary" data-page="contact">
+                            <span>Enroll Now</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#courses" class="btn btn-outline" data-page="courses">
+                            <span>Our Courses</span>
+                            <i class="fas fa-book"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="features-section">
+                <div class="section-header">
+                    <h2 class="section-title">Why Choose Bright Minds?</h2>
+                    <p class="section-subtitle">We provide the perfect environment for academic excellence</p>
+                </div>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <h3>Expert Faculty</h3>
+                        <p>Highly qualified teachers with years of experience in CBSE and BSEB curriculum.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-user-graduate"></i>
+                        </div>
+                        <h3>Personal Attention</h3>
+                        <p>Small batch sizes ensure each student gets individual focus and guidance.</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">
+                            <i class="fas fa-flask"></i>
+                        </div>
+                        <h3>Practical Learning</h3>
+                        <p>Hands-on activities and experiments to enhance conceptual understanding.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Page -->
+        <section class="page" id="about-page">
+            <div class="about-section">
+                <div class="section-header">
+                    <h2 class="section-title">About Us</h2>
+                    <p class="section-subtitle">Our mission is to empower students with knowledge and confidence</p>
+                </div>
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Bright Minds Coaching Center</h3>
+                        <p>Founded in 2025, Bright Minds has established itself as a premier coaching center in Bishunpur Gokhul, Aurai, Muzaffarpur, known for its academic excellence and student-centric approach. We specialize in providing comprehensive education for students from Class 1 to 10, covering both CBSE and BSEB boards.</p>
+                        <p>Our teaching methodology combines traditional values with modern techniques, ensuring students develop strong fundamentals while staying ahead of contemporary educational trends.</p>
+                        <div class="stats-grid">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="3">0</div>
+                                <div class="stat-label">Years Experience</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="50">0</div>
+                                <div class="stat-label">Students Taught</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="98">0</div>
+                                <div class="stat-label">Success Rate</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="about-image">
+                        <div class="image-container">
+                            <img src="images/Hero_bg.jpeg" alt="Classroom">
+                        </div>
+                    </div>
+                </div>
+
+                <div class="founder-section">
+                    <div class="founder-image">
+                        <div class="image-container">
+                            <img src="images/hero-final.jpg" alt="Abhishek Sahani" >
+                        </div>
+                    </div>
+                    <div class="founder-text">
+                        <h3>Abhishek Sahani</h3>
+                        <h4>Founder & Principal Educator</h4>
+                        <p>With a Master's degree in Education and 15+ years of teaching experience, Abhishek Sahani is passionate about transforming the way students learn. His innovative teaching methods and personalized approach have helped hundreds of students achieve academic success.</p>
+                        <p>Specializing in Mathematics and Science pedagogy, Abhishek believes in making learning enjoyable and meaningful through real-world applications and interactive sessions.</p>
+                        <!-- <div class="signature">
+                            <img src="https://i.postimg.cc/9FQ1XvQt/signature.png" alt="Signature">
+                        </div> -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Courses Page -->
+        <section class="page" id="courses-page">
+    <div class="courses-section">
+        <div class="section-header">
+            <h2 class="section-title">Our Courses</h2>
+            <p class="section-subtitle">Comprehensive programs designed for academic excellence</p>
+        </div>
+        <div class="courses-tabs">
+            <div class="tab-buttons">
+                <button class="tab-btn active" data-tab="primary">Primary (1-5)</button>
+                <button class="tab-btn" data-tab="middle">Middle (6-8)</button>
+                <button class="tab-btn" data-tab="junior">Junior Secondary (9)</button>
+                <button class="tab-btn" data-tab="secondary">Secondary (10)</button>
+            </div>
+            
+            <!-- Primary Tab (1-5) -->
+            <div class="tab-content active" id="primary-tab">
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h3>Class 1-5</h3>
+                            <p>Foundation Building</p>
+                        </div>
+                        <div class="course-body">
+                            <ul class="course-features">
+                                <li><i class="fas fa-check"></i> English, Hindi, Mathematics</li>
+                                <li><i class="fas fa-check"></i> Environmental Science</li>
+                                <li><i class="fas fa-check"></i> Activity-based Learning</li>
+                                <li><i class="fas fa-check"></i> Creative Arts & Crafts</li>
+                                <li><i class="fas fa-check"></i> Basic Computer Skills</li>
+                            </ul>
+                            <div class="course-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6 Days/Week</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>200/month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <a href="#contact" class="btn btn-small" data-page="contact">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Middle Tab (6-8) -->
+            <div class="tab-content" id="middle-tab">
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h3>Class 6-8</h3>
+                            <p>Core Subjects Development</p>
+                        </div>
+                        <div class="course-body">
+                            <ul class="course-features">
+                                <li><i class="fas fa-check"></i> Mathematics & Science</li>
+                                <li><i class="fas fa-check"></i> Social Studies</li>
+                                <li><i class="fas fa-check"></i> English Grammar & Composition</li>
+                                <li><i class="fas fa-check"></i> Hindi/Sanskrit</li>
+                                <li><i class="fas fa-check"></i> Practical Science Labs</li>
+                            </ul>
+                            <div class="course-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6 Days/Week</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>300/month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <a href="#contact" class="btn btn-small" data-page="contact">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Junior Secondary Tab (9) -->
+            <div class="tab-content" id="junior-tab">
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h3>Class 9</h3>
+                            <p>Junior Secondary Preparation</p>
+                        </div>
+                        <div class="course-body">
+                            <ul class="course-features">
+                                <li><i class="fas fa-check"></i> Advanced Mathematics</li>
+                                <li><i class="fas fa-check"></i> Physics, Chemistry, Biology</li>
+                                <li><i class="fas fa-check"></i> Social Science</li>
+                                <li><i class="fas fa-check"></i> English Literature</li>
+                                <li><i class="fas fa-check"></i> Board Exam Orientation</li>
+                            </ul>
+                            <div class="course-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6 Days/Week</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>400/month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <a href="#contact" class="btn btn-small" data-page="contact">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Secondary Tab (10) -->
+            <div class="tab-content" id="secondary-tab">
+                <div class="courses-grid">
+                    <div class="course-card">
+                        <div class="course-header">
+                            <h3>Class 10</h3>
+                            <p>Board Exam Excellence</p>
+                        </div>
+                        <div class="course-body">
+                            <ul class="course-features">
+                                <li><i class="fas fa-check"></i> Complete Syllabus Mastery</li>
+                                <li><i class="fas fa-check"></i> CBSE & BSEB Pattern</li>
+                                <li><i class="fas fa-check"></i> Previous Year Papers</li>
+                                <li><i class="fas fa-check"></i> Intensive Revision</li>
+                                <li><i class="fas fa-check"></i> Mock Test Series</li>
+                            </ul>
+                            <div class="course-meta">
+                                <div class="meta-item">
+                                    <i class="fas fa-clock"></i>
+                                    <span>6 Days/Week</span>
+                                </div>
+                                <div class="meta-item">
+                                    <i class="fas fa-rupee-sign"></i>
+                                    <span>400/month</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="course-footer">
+                            <a href="#contact" class="btn btn-small" data-page="contact">Enquire Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+        </section>
+
+        <!-- Gallery Page -->
+        <section class="page" id="gallery-page">
+            <div class="gallery-section">
+                <div class="section-header">
+                    <h2 class="section-title">Gallery</h2>
+                    <p class="section-subtitle">Moments from our classrooms and events</p>
+                </div>
+                <div class="gallery-grid">
+                    <!-- Gallery items will be loaded via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Testimonials Page -->
+        <section class="page" id="testimonials-page">
+            <div class="testimonials-section">
+                <div class="section-header">
+                    <h2 class="section-title">Testimonials</h2>
+                    <p class="section-subtitle">What parents and students say about us</p>
+                </div>
+                <div class="testimonials-slider">
+                    <!-- Testimonials will be loaded via JavaScript -->
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Page -->
+        <section class="page" id="contact-page">
+            <div class="contact-section">
+                <div class="section-header">
+                    <h2 class="section-title">Contact Us</h2>
+                    <p class="section-subtitle">Get in touch for admissions or queries</p>
+                </div>
+                <div class="contact-container">
+                    <div class="contact-info">
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Our Location</h4>
+                                <p>Bishwnath urf Bishunpur Gokhul (Bisth), Aurai, Muzaffarpur, Bihar, 843312</p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-phone-alt"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Phone Number</h4>
+                                <p><a href="tel:+918969370348">+91 8969370348</a></p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Email Address</h4>
+                                <p><a href="mailto:info@bmcc.com">info@bmcc.com</a></p>
+                            </div>
+                        </div>
+                        <div class="info-card">
+                            <div class="info-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content">
+                                <h4>Working Hours</h4>
+                                <p>Monday - Saturday: 8:00 AM - 6:00 PM</p>
+                                <p>Sunday: Closed</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contact-form">
+                        <form id="contactForm">
+                            <div class="form-group">
+                                <input type="text" id="name" class="form-control" required>
+                                <label for="name">Your Name</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="email" id="email" class="form-control" required>
+                                <label for="email">Email Address</label>
+                            </div>
+                            <div class="form-group">
+                                <input type="tel" id="phone" class="form-control" required>
+                                <label for="phone">Phone Number</label>
+                            </div>
+                            <div class="form-group">
+                                <select id="subject" class="form-control" required>
+                                    <option value=""></option>
+                                    <option value="admission">Admission Inquiry</option>
+                                    <option value="course">Course Information</option>
+                                    <option value="feedback">Feedback/Suggestion</option>
+                                    <option value="other">Other</option>
+                                </select>
+                                <label for="subject">Subject</label>
+                            </div>
+                            <div class="form-group">
+                                <textarea id="message" class="form-control" required></textarea>
+                                <label for="message">Your Message</label>
+                            </div>
+                            <button type="submit" class="btn btn-primary">
+                                <span>Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+                <div class="map-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d447.1278673851663!2d85.62110755619604!3d26.293356363114622!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2sin!4v1751717478906!5m2!1sen!2sin" width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                </div>
+            </div>
+        </section>
+    </main>
+    <!-- Mobile Footer -->
+    <footer class="mobile-footer">
+    <div class="footer-nav">
+        <a href="#home" class="footer-link" data-page="home">
+            <i class="fas fa-home"></i>
+            <span>Home</span>
+        </a>
+        <a href="#courses" class="footer-link" data-page="courses">
+            <i class="fas fa-book-open"></i>
+            <span>Courses</span>
+        </a>
+        <a href="#contact" class="footer-link" data-page="contact">
+            <i class="fas fa-envelope"></i>
+            <span>Contact</span>
+        </a>
+        <a href="#about" class="footer-link" data-page="about">
+            <i class="fas fa-user-tie"></i>
+            <span>About</span>
+        </a>
+    </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+    <script src="js/mobile_script.js"></script>
+</body>
+</html>
