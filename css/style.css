@@ -663,7 +663,7 @@ ul {
 .hero {
     background: 
         linear-gradient(135deg, rgba(207, 156, 255, 0.8) 0%, rgba(255, 167, 167, 0.8) 100%),
-        url('../images/Hero_bg.jpeg');
+        url('../Hero_bg.jpeg');
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
