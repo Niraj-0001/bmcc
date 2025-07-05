@@ -493,4 +493,7 @@
     .mobile-nav {
         z-index: 1200;
     }
+    .sidebar-header img{
+        display: none;
+    }
 }
