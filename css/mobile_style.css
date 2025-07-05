@@ -442,40 +442,31 @@
 
 /* Mobile First Approach */
 @media (max-width: 992px) {
-    /* Sidebar Base Styles */
+    /* Fix for sidebar pushing content */
     .sidebar {
         position: fixed;
-        top: 0;
-        left: 0;
-        width: 280px;
-        height: 100vh;
-        transform: translateX(-100%);
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
         z-index: 1100;
-        box-shadow: 5px 0 25px rgba(0, 0, 0, 0.15);
-        overflow-y: auto;
-        -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
-        will-change: transform; /* Optimize animations */
+        box-shadow: 5px 0 25px rgba(0, 0, 0, 0.3);
+        transform: translateX(-100%);
+        transition: transform 0.3s ease;
     }
     
-    /* Active State */
     .sidebar.active {
         transform: translateX(0);
     }
     
-    /* Overlay Styles */
+    /* Add overlay when sidebar is active */
     .sidebar-overlay {
         position: fixed;
         top: 0;
         left: 0;
         right: 0;
         bottom: 0;
-        background: rgba(0, 0, 0, 0.6);
-        backdrop-filter: blur(5px);
-        z-index: 1050;
+        background: rgba(0, 0, 0, 0.5);
+        z-index: 1090;
         opacity: 0;
         visibility: hidden;
-        transition: opacity 0.3s ease, visibility 0.3s ease;
+        transition: all 0.3s ease;
     }
     
     .sidebar.active ~ .sidebar-overlay {
@@ -483,7 +474,7 @@
         visibility: visible;
     }
     
-    /* Body Lock when Sidebar is Open */
+    /* Prevent body scrolling when sidebar is open */
     body.sidebar-open {
         overflow: hidden;
         position: fixed;
@@ -491,90 +482,15 @@
         height: 100%;
     }
     
-    /* Close Button (Add this to your HTML) */
-    .sidebar-close {
-        position: absolute;
-        top: 15px;
-        right: 15px;
-        width: 40px;
-        height: 40px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: rgba(0, 0, 0, 0.1);
-        border-radius: 50%;
-        cursor: pointer;
-        z-index: 10;
-        transition: all 0.3s ease;
-    }
-    
-    .sidebar-close:hover {
-        background: rgba(0, 0, 0, 0.2);
-        transform: rotate(90deg);
-    }
-    
-    .sidebar-close i {
-        font-size: 24px;
-        color: var(--dark);
-    }
-    
-    /* Smooth Content Push (Optional) */
+    /* Adjust main content */
     .main-content {
-        transition: transform 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+        margin-left: 0 !important;
+        transform: none !important;
+        width: 100%;
     }
     
-    .sidebar.active ~ .main-content {
-        transform: translateX(280px);
-    }
-    
-    /* Touch Optimization */
-    .sidebar-nav {
-        padding-bottom: 30px; /* Space for finger scrolling */
-    }
-}
-
-
-.sidebar-toggle {
-    display: none;
-    position: fixed;
-    bottom: 30px;
-    right: 30px;
-    width: 60px;
-    height: 60px;
-    background: linear-gradient(135deg, var(--primary), var(--primary-dark));
-    color: white;
-    border-radius: 50%;
-    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    cursor: pointer;
-    transition: all 0.3s ease;
-    align-items: center;
-    justify-content: center;
-    border: none;
-}
-
-.sidebar-toggle:hover {
-    transform: scale(1.1);
-    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
-}
-
-.sidebar-toggle i {
-    font-size: 24px;
-}
-
-@media (max-width: 992px) {
-    .sidebar-toggle {
-        display: flex;
-    }
-}
-
-
-@media (min-width: 993px) {
-    .sidebar {
-        transform: translateX(0) !important;
-    }
-    
-    .sidebar-overlay {
-        display: none !important;
+    /* Mobile nav should stay above sidebar */
+    .mobile-nav {
+        z-index: 1200;
     }
 }
